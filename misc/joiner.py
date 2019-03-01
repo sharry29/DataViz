@@ -1,6 +1,6 @@
 import pandas as pd
 
-shawn = pd.read_csv("avg_elos_with_pos_color.csv")
+shawn = pd.read_csv("shawn.csv")
 # print(sorted(shawn.team_id.unique()))
 mine = pd.read_csv("nba_colors.csv")
 # print(sorted(mine.team_id.unique()))
