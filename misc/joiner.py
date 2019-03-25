@@ -13,22 +13,22 @@ import pandas as pd
 newer = pd.read_csv("avg_elos_with_pos_color.csv")
 
 def update_vals(row):
-    if row.team_id == "LAC":
-        row.lat = 32.715738
-        row.lon = -117.1610838
-       	print('ding')
-    if row.team_id == "PHI":
-        row.lat += 0.5
-        row.lon -= 1
-       	print('ding')
-    if row.team_id == "NJN" or row.team_id == "BRK":
-        row.lat += -1
-        row.lon -= -0.3
-       	print('ding')
-    if row.team_id == "NYK":
-        row.lat += 0.7
-        row.lon -= 0.2
-       	print('ding')
+    # if row.team_id == "LAC":
+    #     row.lat = 32.715738
+    #     row.lon = -117.1610838
+    #    	print('ding')
+    # if row.team_id == "PHI":
+    #     row.lat += 0.5
+    #     row.lon -= 1
+    #    	print('ding')
+    # if row.team_id == "NJN" or row.team_id == "BRK":
+    #     row.lat += -1
+    #     row.lon -= -0.3
+    #    	print('ding')
+    # if row.team_id == "NYK":
+    #     row.lat += 0.7
+    #     row.lon -= 0.2
+    #    	print('ding')
     if row.team_id == "TOR":
     	row.lon = -1 * row.lon
     return row
