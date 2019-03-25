@@ -17,3 +17,7 @@ def update_vals(row):
         row.lat = 32.715738
         row.lon = -117.1610838
     return row
+
+newer.apply(update_vals, axis=1)
+
+newer.to_csv("avg_elos_with_pos_color.csv")
