@@ -21,4 +21,4 @@ def update_vals(row):
 
 newer = newer.apply(update_vals, axis=1)
 
-newer.to_csv("avg_elos_with_pos_color.csv")
+newer.to_csv("avg_elos_with_pos_color.csv", index=False, columns=["team_id","year_id","fran_id","elo_n","lat","lon","color","num_wins","num_loses","win_loss_ratio"])
