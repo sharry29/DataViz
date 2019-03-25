@@ -16,8 +16,9 @@ def update_vals(row):
     if row.team_id == "LAC":
         row.lat = 32.715738
         row.lon = -117.1610838
+       	print('ding')
     return row
 
-newer.apply(update_vals, axis=1)
+newer = newer.apply(update_vals, axis=1)
 
 newer.to_csv("avg_elos_with_pos_color.csv")
