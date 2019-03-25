@@ -17,6 +17,8 @@ def update_vals(row):
         row.lat = 32.715738
         row.lon = -117.1610838
        	print('ding')
+    if row.team_id == "TOR":
+    	row.lon = -1 * row.lon
     return row
 
 newer = newer.apply(update_vals, axis=1)
